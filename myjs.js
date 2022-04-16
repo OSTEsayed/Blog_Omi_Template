@@ -14,6 +14,9 @@ function Slide(n) {
   }
   first[Index-1].style.display = "block";
 }
+function currentSlide(n) {
+  Slide(Index=n);
+}
 function AutoSlides() {
     let i;
     for (i = 0; i < first.length; i++) {
@@ -22,7 +25,7 @@ function AutoSlides() {
     Index++;
     if (Index > first.length) {Index = 1}
     first[Index-1].style.display = "flex";
-    setTimeout(AutoSlides, 4000); 
+    setTimeout(AutoSlides, 6000); 
 }
 AutoSlides();
 
