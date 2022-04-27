@@ -274,7 +274,7 @@ height: 100%;
     padding: 20px 40px 20px 40px;
     text-align: center;
     display: grid;
-    gap: 100px;
+    gap: 40px;
 }
 .offer h1{
     padding: 30px;
@@ -343,6 +343,7 @@ height: 100%;
     padding: 30px;
 }
 .Are .what{
+    display: none;
     grid-area: what;
     min-height: 80%;
 }
@@ -355,4 +356,97 @@ height: 100%;
 .Are p{
     font-size: 0.8;
     color: #504f4f;
+}
+.serv{
+    display: none;
+}
+.whatanim{
+    display: block;
+    animation-name: whatanime;
+    animation-duration: 4s;
+  }
+  
+@keyframes whatanime {
+    from {  
+      opacity: 0.100;  
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+
+.Contact{
+    color: white;
+    margin-top: 40px;
+position: relative;
+background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 17%, rgba(0,212,255,1) 100%);
+min-height: 80vh;
+width:100vw;
+display: flex;
+}
+.icons{
+    text-align: center;
+    min-width: 50%;
+    display: grid;
+    grid-template-areas: "header header"
+    "fb1 fb2"
+    "fb3 fb4";
+}
+.fb i{
+    font-size: 3em;
+}
+.icons h3,.ico h3{
+    text-align: center;
+grid-area: header;
+}
+.ico2{
+    text-align: center;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.frm{
+    
+    display: flex;
+    width: 70%;
+row-gap: 20px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 10%;
+    padding: 60px 40px;
+    flex-direction: column;
+}
+
+.frm input{
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    background-color: #bbb;
+    border: none;   
+}
+.frm textarea{
+    height: 70px;
+    border-radius: 8px;
+    color: white;
+    background-color: #bbb;
+    border: none;   
+    
+}
+.frm button{
+
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(73, 87, 216);
+    border: none;   
+}
+
+.last{
+    margin:0;
+    position: relative;
+    width: 100vw;
+    height: 100px;
+    background-color: white;
 }
