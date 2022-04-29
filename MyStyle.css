@@ -262,10 +262,8 @@ height: 100%;
 
 @keyframes fade {
   from {
-    left: 30px;  
-    opacity: .5}
+    opacity: .3}
   to {
-      left:0;
       opacity: 1}
 }
 
@@ -479,6 +477,9 @@ row-gap: 20px;
 .red{
     color: red;
 }
+.nooon{
+     display: none !important;
+}
 
 
 @media ( max-width:800px) {
@@ -660,5 +661,34 @@ nav header h3 {
     font-size: 0.7em;
     margin-top:10px;
    }
+   .menu{
+    min-width: 70vw;
+    max-width: 70vw;
+}
+.menu li {
+    display: grid;
+    align-items: center;
+    height: 10%;
+}
+
+
+
+.feat,.doc{    
+    position: relative;
+    top: auto; 
+    height: max-content;
+    left:auto;
+ }
+
+
+ .mg:hover>.mega{
+    display: none;
+}
+.xr{
+    opacity: 0;
+}
+
+
+
 
 }
