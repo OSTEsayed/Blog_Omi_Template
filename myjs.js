@@ -60,3 +60,15 @@ var observer = new IntersectionObserver(function(entries) {
 }, { threshold: [0.5] });
 
 observer.observe(ser);
+var menu=document.getElementsByClassName("menu")[0];
+var bleur=document.getElementsByClassName("bleur")[0];
+function mennu(){
+  menu.style.left="0";
+  bleur.style.display="block";
+  
+}
+function onmennnu(){
+  menu.style.left="-100%";
+  bleur.style.display="none";
+
+}
